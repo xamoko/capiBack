@@ -14,7 +14,7 @@ class UserController extends Controller
 {
     public function users(Request $request)
     {
-        $users = DB::table('user_domicilio')->select('user_id', 'domicilio', 'fecha_nacimiento')->get();
+        $users = DB::table('user_domicilio')->select('user_id', 'nombre_usuario','domicilio', 'fecha_nacimiento')->get();
         $fechanacimiento = DB::table('user_domicilio')->select('fecha_nacimiento')->get();
 
         /* $json = json_decode($fechanacimiento);
