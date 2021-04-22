@@ -1,20 +1,18 @@
 <?php
 
 namespace Database\Seeders;
-
-use Illuminate\Database\Seeder;
 use App\Models\user_domicilio;
+use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class user_domicilio_seeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      *
      * @return void
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
         user_domicilio::factory(100)->create();
     }
 }
