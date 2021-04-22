@@ -24,6 +24,7 @@ class user_domicilioFactory extends Factory
         return [
 
             //'user_id' => $this->faker->user_id(),
+            'nombre_usuario' => $this->faker->name(),
             'domicilio' => $this->faker->address(),
             'numero_exterior' => $this->faker->buildingNumber(),
             'colonia' => $this->faker->citySuffix(),
